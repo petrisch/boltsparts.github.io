@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="/static/favicon.ico" />
+  
+  <link rel="stylesheet" href="/static/css/style.css?019e02bb" type="text/css" media="screen">
+  
+  <title>Part list</title>
+</head>
+<body>
+
+   <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Changer la navigation</span>
+          <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="/fr/index.html">Page principale</a></li>
+          <li><a href="/fr/blog/index.html">Blogue</a></li>
+          <li><a href="/fr/parts/index.html">Pièces</a></li>
+          <li><a href="/fr/docs/index.html">Documentation</a></li>
+          <li><a href="/fr/contribute.html">Contribuer</a></li>
+          <li><a href="/fr/downloads.html">Téléchargements</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">fr<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="/en/parts/standards/CF.html">Anglais</a></li>
+              <li><a href="/de/parts/standards/CF.html">Allemand</a></li>
+              <li><a href="/fr/parts/standards/CF.html">Français</a></li>
+              <li><a href="/es/parts/standards/CF.html">Espagnol</a></li>
+              <li><a href="/sv/parts/standards/CF.html">Suédois</a></li>
+            </ul>
+          </li>
+          <li><a class="github" href="https://github.com/jreinhardt/BOLTS">Github</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+
+
+
+<div class="page-title-bar">
+  <div class="container">
+    <h2>Parts list</h2>
+  </div>
+</div>
+
+<div class="container">
+  
+<h1>CF</h1>
+<table class="table">
+<tr><th><strong>Auteur:</strong></th><td>KOLANICH</td></tr>
+<tr><th><strong>License:</strong></th><td><a href="http://unlicense.org">Unlicense</a></td></tr>
+<tr><th><strong>Collection:</strong></th><td><a href="/fr/parts/collections/vacuum.html">Vacuum</a></td></tr>
+<tr><th><strong>Identique à:</strong></th><td><a href="/fr/parts/names/Flanges.html">flanges</a></td></tr>
+<tr><th><strong>Status:</strong></th><td>active</td></tr>
+<tr><th><strong>corps standard:</strong></th><td><a href="/fr/parts/bodies/EN.html">EN</a></td></tr>
+<tr><th><strong>ID:</strong></th><td>CF</td></tr>
+<tr><th><strong>Source:</strong></th><td>http://www.tracepartsonline.net/(S(c314dufymcnxxurthiwo4pow))/PartDetails.aspx?PartFamilyID=30-03062015-098588&PartID=30-03062015-098588</td></tr>
+</table>
+
+
+<h2>Paramètres</h2>
+
+<table class="table">
+<tr><th>Nom du paramètre</th> <th>Description</th><tr>
+<tr><td>openingDepth</td> <td>The depthd of the opening in the part visibl from the side of the flange</td></tr>
+<tr><td>innerDiameter</td> <td>The inner diameter of the part</td></tr>
+<tr><td>partLen</td> <td>The length of the part</td></tr>
+<tr><td>grooveRadius</td> <td>The radius of the flange</td></tr>
+<tr><td>holeTrDiameter</td> <td>The diameter of the circumference the holes for fasteners are placed on</td></tr>
+<tr><td>dn</td> <td>DN type</td></tr>
+<tr><td>flangeDiameter</td> <td>The diameter of the flange</td></tr>
+<tr><td>flangeSize</td> <td>The thickness of the flange</td></tr>
+<tr><td>openingDiameter</td> <td>The diameter of the opening in the part visibl from the side of the flange</td></tr>
+<tr><td>outerDiameter</td> <td>the outer diameter of the part</td></tr>
+<tr><td>holeDiameter</td> <td>The diameters of the central hole, use zero is the hole is unneeded</td></tr>
+</table>
+
+<h2>Description</h2>
+<p>EN CF flanges</p>
+
+<h2>FreeCAD</h2>
+
+
+
+
+<h2>OpenSCAD</h2>
+
+<table class="table">
+<tr><th><strong>Auteur:</strong></th><td>KOLANICH</td></tr>
+<tr><th><strong>License:</strong></th><td><a href="https://unlicense.org">Unlicense</a></td></tr>
+</table>
+<h3>Incantations</h3>
+  <pre><code>module CF(dn=&#34;DN100&#34;, part_mode=&#34;default&#34;)
+function CF_dims(dn=&#34;DN100&#34;, part_mode=&#34;default&#34;)
+function CF_conn(location,dn=&#34;DN100&#34;, part_mode=&#34;default&#34;)</code></pre>
+  <h3>connecteurs</h3>
+  <table class="table">
+<tr><th>Emplacement</th> <th>Plan</th><tr>
+</table>
+
+
+<h2>Tables</h2>
+  
+  <table class="table">
+<tr><th>dn</th> <th>partLen (mm)</th> <th>innerDiameter (mm)</th> <th>outerDiameter (mm)</th> <th>flangeDiameter (mm)</th> <th>flangeSize (mm)</th> <th>grooveRadius (mm)</th> <th>openingDepth (mm)</th> <th>openingDiameter (mm)</th> <th>holeDiameter (mm)</th> <th>holeTrDiameter (mm)</th><tr>
+<tr><td>DN100</td> <td>1000.0</td> <td>100.0</td> <td>104.0</td> <td>152.0</td> <td>20.0</td> <td>1.5</td> <td>9.0</td> <td>106.0</td> <td>0.0</td> <td>130.3</td></tr>
+</table>
+  
+  
+
+<h2>Comments</h2>
+<div id="comments"></div>
+
+  
+  <hr>
+  <footer id="footer">
+    <p>© Johannes Reinhardt, Image de titre par <a href="https://www.flickr.com/photos/dkpphotography/9468970843">Dhruv Patel</a>, thème basé sur un <a href="https://github.com/Wolfr/cactus-jekyll-theme">design</a> par <a href="http://wolfslittlestore.be">Wolf's Little Store</a></p>
+  </footer>
+  
+</div>
+
+<script type="text/javascript" class="juvia">
+(function() {
+    var options = {
+        container    : '#comments',
+        site_key     : 'i2tzqcns7cm0alygsdvh9fhyfe2g0u1',
+        topic_key    : location.pathname,
+        topic_url    : location.href,
+        topic_title  : document.title || location.href,
+        comment_order: 'latest-first'
+    };
+
+    function makeQueryString(options) {
+        var key, params = [];
+        for (key in options) {
+            params.push(
+                encodeURIComponent(key) +
+                '=' +
+                encodeURIComponent(options[key]));
+        }
+        return params.join('&');
+    }
+
+    function makeApiUrl(options) {
+        // Makes sure that each call generates a unique URL, otherwise
+        // the browser may not actually perform the request.
+        if (!('_juviaRequestCounter' in window)) {
+            window._juviaRequestCounter = 0;
+        }
+
+        var result =
+            '//j.stbuehler.de/api/show_topic.js' +
+            '?_c=' + window._juviaRequestCounter +
+            '&' + makeQueryString(options);
+        window._juviaRequestCounter++;
+        return result;
+    }
+
+    var s       = document.createElement('script');
+    s.async     = true;
+    s.type      = 'text/javascript';
+    s.className = 'juvia';
+    s.src       = makeApiUrl(options);
+    (document.getElementsByTagName('head')[0] ||
+     document.getElementsByTagName('body')[0]).appendChild(s);
+})();
+</script>
+
+
+<script src="/static/js/all.js?9bb454f9"></script>
+
+</body>
+</html>

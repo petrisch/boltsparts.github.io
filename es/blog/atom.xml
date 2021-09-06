@@ -2,10 +2,35 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title type="text">Recent Blog Entries</title>
   <id>https://boltsparts.github.io/es/blog/atom.xml</id>
-  <updated>2019-06-03T07:30:00Z</updated>
+  <updated>2021-09-06T22:15:00Z</updated>
   <link href="https://boltsparts.github.io/" />
   <link href="https://boltsparts.github.io/es/blog/atom.xml" rel="self" />
   <generator>Werkzeug</generator>
+  <entry xml:base="https://boltsparts.github.io/es/blog/atom.xml">
+    <title type="text">New BOLTS distribution PythonPackage</title>
+    <id>https://boltsparts.github.io/es/blog/2021/9/6/PythonPackage%20distribution.html</id>
+    <updated>2021-09-06T22:15:00Z</updated>
+    <published>2021-09-06T22:15:00Z</published>
+    <link href="https://boltsparts.github.io/es/blog/2021/9/6/PythonPackage%20distribution.html" />
+    <author>
+      <name>Bernd</name>
+    </author>
+    <summary type="html"><p>Python Package a BOLTS distribution for the use without CAD has been developed.</p></summary>
+    <content type="html">&lt;p&gt;Python Package a BOLTS distribution for the use without CAD has been developed.&lt;/p&gt;
+&lt;!-- more --&gt;
+
+&lt;p&gt;Development hast been continued after a long time of only rare development.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A very nasty problem in the regard of imports on all operating systems
+  has been fixed for FreeCAD backend.&lt;/li&gt;
+&lt;li&gt;A lot of code formating has taken place.&lt;/li&gt;
+&lt;li&gt;On a few places it was moved to some more generic aproach.
+  Thus duplicate code was deleted.&lt;/li&gt;
+&lt;li&gt;A new distribution PythonPackage for the use without any CAD has been develped.&lt;/li&gt;
+&lt;li&gt;On osarch is a topic with lots of interesting posts.
+  See &lt;a href=&quot;https://community.osarch.org/discussion/524/profile-section-libraries-for-structural-engineering-and-beyond/&quot;&gt;Profile Section Libraries for Structural Engineering and beyond!&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+  </entry>
   <entry xml:base="https://boltsparts.github.io/es/blog/atom.xml">
     <title type="text">Just wanne say hello :-)</title>
     <id>https://boltsparts.github.io/es/blog/2019/6/3/Bernd-says-hello.html</id>
@@ -13,7 +38,7 @@
     <published>2019-06-03T07:30:00Z</published>
     <link href="https://boltsparts.github.io/es/blog/2019/6/3/Bernd-says-hello.html" />
     <author>
-      <name>Johannes</name>
+      <name>Bernd</name>
     </author>
     <summary type="html"><p>Hi it's Bernd!</p></summary>
     <content type="html">&lt;p&gt;Hi it's Bernd!&lt;/p&gt;
@@ -35,7 +60,7 @@
     <published>2019-05-17T14:00:00Z</published>
     <link href="https://boltsparts.github.io/es/blog/2019/5/17/Revival.html" />
     <author>
-      <name>Bernd</name>
+      <name>Johannes</name>
     </author>
     <summary type="html"><p>During a long period of inactivity from my side BOLTS has degraded. Bugs and Problems were noticed, but not fixed, the website went down at some point, and also the integrations had their share of bit-rot.</p>
 <p>However Bernd Hahnebach kept the FreeCAD macro alive and from now on, we will together maintain this project. A number of activities have started</p></summary>
@@ -712,115 +737,5 @@ only in a 2 MByte tar.xz file.&lt;/p&gt;
 &lt;p&gt;On Windows, tar.xz files can be decompressed using the &lt;a href=&quot;http://www.7-zip.org/&quot;&gt;7z tool&lt;/a&gt;. 
 On most Linux distributions the common tools to work with compressed data can
 handle tar.xz, or at least packages are available for xz-tools.&lt;/p&gt;</content>
-  </entry>
-  <entry xml:base="https://boltsparts.github.io/es/blog/atom.xml">
-    <title type="text">Improvements for BOLTS for OpenSCAD</title>
-    <id>https://boltsparts.github.io/es/blog/2013/12/28/OpenSCAD-positioning.html</id>
-    <updated>2013-12-27T23:15:00Z</updated>
-    <published>2013-12-27T23:15:00Z</published>
-    <link href="https://boltsparts.github.io/es/blog/2013/12/28/OpenSCAD-positioning.html" />
-    <author>
-      <name>Johannes</name>
-    </author>
-    <summary type="html"><p>I am looking for ways to make it easier to use parts from
-<a href="/en/index.html?version=0.3">BOLTS</a>) in OpenSCAD. At the moment it is a bit awkward
-because one has to know precisely how the BOLTS part is positioned and oriented
-and then has to translate and rotate it around. This often requires the
-knowledge of some dimensions of the part, so one has to query BOLTS about it,
-and suddenly it is a lot of code that is difficult to read and annoying to
-write.</p></summary>
-    <content type="html">&lt;p&gt;I am looking for ways to make it easier to use parts from
-&lt;a href=&quot;{{ url(main.index) }}&quot;&gt;BOLTS&lt;/a&gt;) in OpenSCAD. At the moment it is a bit awkward
-because one has to know precisely how the BOLTS part is positioned and oriented
-and then has to translate and rotate it around. This often requires the
-knowledge of some dimensions of the part, so one has to query BOLTS about it,
-and suddenly it is a lot of code that is difficult to read and annoying to
-write.&lt;/p&gt;
-&lt;!-- more --&gt;
-
-&lt;p&gt;OpenSCAD code in general quickly becomes big and difficult, because it usually
-describes several solids with dimensions and positions that depend on each
-other, so everything is quite entangled on a global scale. The module concept
-allows for a certain degree of reuse, but I still often find myself in the
-situation that I get stuck with understanding a piece of massively nested
-OpenSCAD code that I wrote only a while ago. Things like 
-translate([h-2*l,40-k,a+b+f-c]) rotate([0,90,0]) translate(...).&lt;/p&gt;
-&lt;h3&gt;Scope&lt;/h3&gt;
-&lt;p&gt;I believe that scope is a fundamental ingredient to clarity and brevity
-in programming. Allowing the programmer to think only about the current
-problem he is attacking, while moving everything else out of sight,
-results in clean and readable code.&lt;/p&gt;
-&lt;p&gt;I had bookmarked obijuans
-&lt;a href=&quot;https://github.com/Obijuan/obiscad&quot;&gt;attach library&lt;/a&gt;(or on
-&lt;a href=&quot;http://www.thingiverse.com/thing:30136&quot;&gt;Thingiverse&lt;/a&gt;) already quite a while
-ago, because I had hoped, that the connector concept could allow for cleaner,
-less entangled code. When playing around with it, I realized that a connector
-is basically a local coordinate system with a origin, one axis to fix the
-direction and another axis to fix the rotation around the first axis.&lt;/p&gt;
-&lt;p&gt;I like the idea of local coordinate systems, because it is a local
-scope that can be convenient to think in. It also seems a promising
-approach to avoid or at least reduce the cumbersome and
-difficult nested transformations or complicated arguments that I often
-end up with.&lt;/p&gt;
-&lt;p&gt;I hacked together &lt;a href=&quot;https://github.com/jreinhardt/local-scad&quot;&gt;a bit of code&lt;/a&gt;
-to do that, heavily inspired by the attach library, but working around some
-issues. At the moment it allows to do three things:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Create and display coordinate systems (lists of lists with origin and
-  x,y,z axes, but the user should not need to know this)&lt;/li&gt;
-&lt;li&gt;move and rotate an object (or a whole tree) from the global coordinate
-  system into a local one.&lt;/li&gt;
-&lt;li&gt;align a coordinate system and a object (or a tree) with
-  another coordinate system.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The first and the last operation are slightly improved variations of
-the functionality of the attach library.&lt;/p&gt;
-&lt;h3&gt;Positioning in BOLTS for OpenSCAD&lt;/h3&gt;
-&lt;p&gt;To make use of this method of positioning in BOLTS, each part provides
-a few connectors located at strategic positions of the part. Then the align
-operation can be used to position and orient the part. This way things like
-&quot;put that bolt the so that its tip is here&quot; or &quot;the head of that bolt should
-be at this point&quot; can be expressed in a compact and readable way.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;{{ static(openscad-connectors.png) }}&quot;&gt;&lt;img alt=&quot;Connector positions&quot; src=&quot;{{ static(openscad-connectors.png) }}&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;Example: Bolted connection&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;include &amp;lt;BOLTS.scad&amp;gt;
-
-$fn=50;
-
-% cube([10,40,50]);
-
-//connectors
-cube_cs = new_cs(origin = [10,20,20], axes = [[-1,0,0],[0,-1,0]]);
-washer_cs = ISO7089_conn(&quot;top&quot;,&quot;M4&quot;);
-bolt_cs = ISO4017_conn(&quot;root&quot;,&quot;M4&quot;,20);
-nut_cs = ISO4035_conn(&quot;bottom&quot;,&quot;M4&quot;);
-
-//connectors can be displayed with
-//show_cs(cube_cs);
-
-//thickness of washer
-s = get_dim(ISO7089_dims(&quot;M4&quot;),&quot;s&quot;);
-
-//position washer and bolt at the location specified by cube_cs
-align(washer_cs,cube_cs) ISO7089(&quot;M4&quot;);
-align(bolt_cs,cube_cs,[-s,0,0]) ISO4017(&quot;M4&quot;,20);
-align(washer_cs,cube_cs,[10+s,0,0]) ISO7089(&quot;M4&quot;);
-align(nut_cs,cube_cs,[10+s,0,0]) ISO4035(&quot;M4&quot;);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;which is readable, compact and flexible. To change the position or
-orientation of the bolted connection, one just has to change cube_cs.
-Changing the size of the bolts and washers change M4 is also easy.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;{{ static(openscad-positioningexample.png) }}&quot;&gt;&lt;img alt=&quot;Bolted connection example&quot; src=&quot;{{ static(openscad-positioningexample.png) }}&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;Try it&lt;/h3&gt;
-&lt;p&gt;You can try this functionality with the most recent development snapshot from
-the &lt;a href=&quot;{{ url(main.downloads) }}&quot;&gt;BOLTS page&lt;/a&gt;. Either place the contents of the
-archive in the same directory as the .scad files that use BOLTS, or follow the
-instructions on 
-&lt;a href=&quot;{{ doc_version(0.4, openscad,installation) }}&quot;&gt;how to install BOLTS for OpenSCAD&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Not all parts have connectors yet, but nuts, washers, hex bolts and
-batteries do. The names of the connectors are listed in the OpenSCAD section of the
-&lt;a href=&quot;{{ url(parts.index) }}&quot;&gt;part page&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;There is no documentation for this feature (apart from this blog post), because
-I might still change the way things work.&lt;/p&gt;</content>
   </entry>
 </feed>

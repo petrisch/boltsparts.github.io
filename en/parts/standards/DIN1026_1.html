@@ -33,11 +33,11 @@
           <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">en<span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
-              <li><a href="/en/parts/standards/DINEN10056_1.html">English</a></li>
-              <li><a href="/de/parts/standards/DINEN10056_1.html">German</a></li>
-              <li><a href="/fr/parts/standards/DINEN10056_1.html">French</a></li>
-              <li><a href="/es/parts/standards/DINEN10056_1.html">Spanish</a></li>
-              <li><a href="/sv/parts/standards/DINEN10056_1.html">Swedish</a></li>
+              <li><a href="/en/parts/standards/DIN1026_1.html">English</a></li>
+              <li><a href="/de/parts/standards/DIN1026_1.html">German</a></li>
+              <li><a href="/fr/parts/standards/DIN1026_1.html">French</a></li>
+              <li><a href="/es/parts/standards/DIN1026_1.html">Spanish</a></li>
+              <li><a href="/sv/parts/standards/DIN1026_1.html">Swedish</a></li>
             </ul>
           </li>
           <li><a class="github" href="https://github.com/jreinhardt/BOLTS">Github</a></li>
@@ -56,15 +56,15 @@
 
 <div class="container">
   
-<h1>DINEN10056-1</h1>
+<h1>DIN 1026-1</h1>
 <table class="table">
 <tr><th><strong>Author:</strong></th><td>Bernd Hahnebach</td></tr>
 <tr><th><strong>License:</strong></th><td><a href="http://www.gnu.org/licenses/lgpl-2.1">LGPL 2.1+</a></td></tr>
-<tr><th><strong>Collection:</strong></th><td><a href="/en/parts/collections/profile_l.html">Profiles L</a></td></tr>
-<tr><th><strong>Identical to:</strong></th><td><a href="/en/parts/names/LNPEqual_sidedProfile.html">LNP equal-sided Profile</a></td></tr>
+<tr><th><strong>Collection:</strong></th><td><a href="/en/parts/collections/profile_c.html">Profiles C</a></td></tr>
+<tr><th><strong>Identical to:</strong></th><td><a href="/en/parts/names/UPNProfile.html">UPN Profile</a></td></tr>
 <tr><th><strong>Status:</strong></th><td>active</td></tr>
-<tr><th><strong>Standard body:</strong></th><td><a href="/en/parts/bodies/DINEN.html">DINEN</a></td></tr>
-<tr><th><strong>ID:</strong></th><td>DINEN10056_1</td></tr>
+<tr><th><strong>Standard body:</strong></th><td><a href="/en/parts/bodies/NFA.html">NFA</a></td></tr>
+<tr><th><strong>ID:</strong></th><td>DIN1026_1</td></tr>
 <tr><th><strong>Source:</strong></th><td>http://www.bauforumstahl.de/Querschnittswerte</td></tr>
 </table>
 
@@ -73,16 +73,17 @@
 
 <table class="table">
 <tr><th>Parameter Name</th> <th>Description</th><tr>
-<tr><td>t</td> <td>thickness</td></tr>
-<tr><td>r2</td> <td>outer fillet radius</td></tr>
-<tr><td>a</td> <td>beam width</td></tr>
 <tr><td>l</td> <td>beam length</td></tr>
-<tr><td>r1</td> <td>inner fillet radius</td></tr>
+<tr><td>tw</td> <td>web thickness</td></tr>
+<tr><td>tf</td> <td>flange thickness</td></tr>
+<tr><td>r</td> <td>fillet radius</td></tr>
+<tr><td>b</td> <td>flange width</td></tr>
+<tr><td>h</td> <td>beam height</td></tr>
 <tr><td>type</td> <td>beam type</td></tr>
 </table>
 
 <h2>Description</h2>
-<p>corner profile, metric european standard equal-sided LNP profile</p>
+<p>UPN profile, metric european standard c-beam profile</p>
 
 <h2>FreeCAD</h2>
 
@@ -106,44 +107,21 @@
 <h2>Tables</h2>
   
   <table class="table">
-<tr><th>type</th> <th>a (mm)</th> <th>t (mm)</th> <th>r1 (mm)</th> <th>r2 (mm)</th><tr>
-<tr><td>LNP20x3</td> <td>20.0</td> <td>3.0</td> <td>3.5</td> <td>1.75</td></tr>
-<tr><td>LNP25x4</td> <td>25.0</td> <td>4.0</td> <td>3.5</td> <td>1.75</td></tr>
-<tr><td>LNP25x3</td> <td>25.0</td> <td>3.0</td> <td>3.5</td> <td>1.75</td></tr>
-<tr><td>LNP30x4</td> <td>30.0</td> <td>4.0</td> <td>5.0</td> <td>2.5</td></tr>
-<tr><td>LNP30x3</td> <td>30.0</td> <td>3.0</td> <td>5.0</td> <td>2.5</td></tr>
-<tr><td>LNP40x5</td> <td>40.0</td> <td>5.0</td> <td>6.0</td> <td>3.0</td></tr>
-<tr><td>LNP40x4</td> <td>40.0</td> <td>4.0</td> <td>6.0</td> <td>3.0</td></tr>
-<tr><td>LNP45x4.5</td> <td>45.0</td> <td>4.5</td> <td>7.0</td> <td>3.5</td></tr>
-<tr><td>LNP50x5</td> <td>50.0</td> <td>5.0</td> <td>7.0</td> <td>3.5</td></tr>
-<tr><td>LNP50x6</td> <td>50.0</td> <td>6.0</td> <td>7.0</td> <td>3.5</td></tr>
-<tr><td>LNP60x8</td> <td>60.0</td> <td>8.0</td> <td>8.0</td> <td>4.0</td></tr>
-<tr><td>LNP60x5</td> <td>60.0</td> <td>5.0</td> <td>8.0</td> <td>4.0</td></tr>
-<tr><td>LNP60x6</td> <td>60.0</td> <td>6.0</td> <td>8.0</td> <td>4.0</td></tr>
-<tr><td>LNP65x7</td> <td>65.0</td> <td>7.0</td> <td>9.0</td> <td>4.5</td></tr>
-<tr><td>LNP70x7</td> <td>70.0</td> <td>7.0</td> <td>9.0</td> <td>4.5</td></tr>
-<tr><td>LNP70x6</td> <td>70.0</td> <td>6.0</td> <td>9.0</td> <td>4.5</td></tr>
-<tr><td>LNP75x8</td> <td>75.0</td> <td>8.0</td> <td>9.0</td> <td>4.5</td></tr>
-<tr><td>LNP80x8</td> <td>80.0</td> <td>8.0</td> <td>10.0</td> <td>5.0</td></tr>
-<tr><td>LNP80x10</td> <td>80.0</td> <td>10.0</td> <td>10.0</td> <td>5.0</td></tr>
-<tr><td>LNP90x8</td> <td>90.0</td> <td>8.0</td> <td>11.0</td> <td>5.5</td></tr>
-<tr><td>LNP90x9</td> <td>90.0</td> <td>9.0</td> <td>11.0</td> <td>5.5</td></tr>
-<tr><td>LNP90x7</td> <td>90.0</td> <td>7.0</td> <td>11.0</td> <td>5.5</td></tr>
-<tr><td>LNP100x10</td> <td>100.0</td> <td>10.0</td> <td>12.0</td> <td>6.0</td></tr>
-<tr><td>LNP100x12</td> <td>100.0</td> <td>12.0</td> <td>12.0</td> <td>6.0</td></tr>
-<tr><td>LNP120x12</td> <td>120.0</td> <td>12.0</td> <td>13.0</td> <td>6.5</td></tr>
-<tr><td>LNP120x10</td> <td>120.0</td> <td>10.0</td> <td>13.0</td> <td>6.5</td></tr>
-<tr><td>LNP130x12</td> <td>130.0</td> <td>12.0</td> <td>14.0</td> <td>7.0</td></tr>
-<tr><td>LNP150x15</td> <td>150.0</td> <td>15.0</td> <td>16.0</td> <td>8.0</td></tr>
-<tr><td>LNP150x10</td> <td>150.0</td> <td>10.0</td> <td>16.0</td> <td>8.0</td></tr>
-<tr><td>LNP150x12</td> <td>150.0</td> <td>12.0</td> <td>16.0</td> <td>8.0</td></tr>
-<tr><td>LNP160x15</td> <td>160.0</td> <td>15.0</td> <td>17.0</td> <td>8.5</td></tr>
-<tr><td>LNP180x16</td> <td>180.0</td> <td>16.0</td> <td>18.0</td> <td>9.0</td></tr>
-<tr><td>LNP180x18</td> <td>180.0</td> <td>18.0</td> <td>18.0</td> <td>9.0</td></tr>
-<tr><td>LNP200x16</td> <td>200.0</td> <td>16.0</td> <td>18.0</td> <td>9.0</td></tr>
-<tr><td>LNP200x20</td> <td>200.0</td> <td>20.0</td> <td>18.0</td> <td>9.0</td></tr>
-<tr><td>LNP200x18</td> <td>200.0</td> <td>18.0</td> <td>18.0</td> <td>9.0</td></tr>
-<tr><td>LNP200x24</td> <td>200.0</td> <td>24.0</td> <td>18.0</td> <td>9.0</td></tr>
+<tr><th>type</th> <th>h (mm)</th> <th>b (mm)</th> <th>tw (mm)</th> <th>tf (mm)</th> <th>r (mm)</th><tr>
+<tr><td>UPN80</td> <td>80.0</td> <td>50.0</td> <td>4.0</td> <td>7.0</td> <td>10.0</td></tr>
+<tr><td>UPN100</td> <td>100.0</td> <td>55.0</td> <td>4.5</td> <td>7.5</td> <td>10.0</td></tr>
+<tr><td>UPN120</td> <td>120.0</td> <td>60.0</td> <td>5.0</td> <td>8.0</td> <td>12.0</td></tr>
+<tr><td>UPN140</td> <td>140.0</td> <td>65.0</td> <td>5.0</td> <td>9.0</td> <td>12.0</td></tr>
+<tr><td>UPN160</td> <td>160.0</td> <td>70.0</td> <td>5.5</td> <td>9.5</td> <td>12.0</td></tr>
+<tr><td>UPN180</td> <td>180.0</td> <td>75.0</td> <td>5.5</td> <td>10.5</td> <td>12.0</td></tr>
+<tr><td>UPN200</td> <td>200.0</td> <td>80.0</td> <td>6.0</td> <td>11.0</td> <td>13.0</td></tr>
+<tr><td>UPN220</td> <td>220.0</td> <td>85.0</td> <td>6.5</td> <td>12.0</td> <td>13.0</td></tr>
+<tr><td>UPN240</td> <td>240.0</td> <td>90.0</td> <td>7.0</td> <td>12.5</td> <td>15.0</td></tr>
+<tr><td>UPN270</td> <td>270.0</td> <td>95.0</td> <td>7.5</td> <td>13.5</td> <td>15.0</td></tr>
+<tr><td>UPN300</td> <td>300.0</td> <td>100.0</td> <td>9.5</td> <td>15.0</td> <td>15.0</td></tr>
+<tr><td>UPN330</td> <td>330.0</td> <td>105.0</td> <td>11.0</td> <td>16.0</td> <td>18.0</td></tr>
+<tr><td>UPN360</td> <td>360.0</td> <td>110.0</td> <td>12.0</td> <td>17.0</td> <td>18.0</td></tr>
+<tr><td>UPN400</td> <td>400.0</td> <td>115.0</td> <td>13.5</td> <td>18.0</td> <td>18.0</td></tr>
 </table>
   
   

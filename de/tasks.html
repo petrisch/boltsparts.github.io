@@ -90,9 +90,11 @@
 <tr><td>hexsocketcountersunk</td> <td>Hexagon socket fasteners</td></tr>
 <tr><td>hexsocketsetscrewall</td> <td>Hexagon socket fasteners</td></tr>
 <tr><td>lbeam_lnp_equal</td> <td>Profiles L</td></tr>
+<tr><td>lbeam_lnp_unequal</td> <td>Profiles L</td></tr>
 <tr><td>zbeam</td> <td>Profiles Z</td></tr>
 <tr><td>cbeam_upe</td> <td>Profiles C</td></tr>
 <tr><td>cbeam_uap</td> <td>Profiles C</td></tr>
+<tr><td>cbeam_upn</td> <td>Profiles C</td></tr>
 <tr><td>ibeam_hea</td> <td>Profiles I</td></tr>
 <tr><td>ibeam_heaa</td> <td>Profiles I</td></tr>
 <tr><td>ibeam_heb</td> <td>Profiles I</td></tr>
@@ -103,7 +105,7 @@
 <tr><td>ibeam_ipeo</td> <td>Profiles I</td></tr>
 <tr><td>ibeam_iper</td> <td>Profiles I</td></tr>
 <tr><td>ibeam_ipev</td> <td>Profiles I</td></tr>
-<tr><td>inp</td> <td>Profiles I</td></tr>
+<tr><td>ibeam_inp</td> <td>Profiles I</td></tr>
 <tr><td>hexscrew2</td> <td>Hexagon fasteners</td></tr>
 </table>
 
@@ -146,6 +148,7 @@
 
     <table class="table">
 <tr><th>Class id</th> <th>Collection</th> <th>FreeCAD</th> <th>OpenSCAD</th><tr>
+<tr><td>vacuumflange</td> <td>Vacuum</td> <td>False</td> <td>True</td></tr>
 <tr><td>plateflange</td> <td>Flanges</td> <td>True</td> <td>False</td></tr>
 <tr><td>blindflange</td> <td>Flanges</td> <td>True</td> <td>False</td></tr>
 <tr><td>hollow_generic_circle</td> <td>Profiles Hollow</td> <td>True</td> <td>False</td></tr>
@@ -155,11 +158,6 @@
 <tr><td>hollow_square</td> <td>Profiles Hollow</td> <td>True</td> <td>False</td></tr>
 <tr><td>hollow_rectangular</td> <td>Profiles Hollow</td> <td>True</td> <td>False</td></tr>
 <tr><td>tubebarcrimpedends</td> <td>Connecting Bars</td> <td>True</td> <td>False</td></tr>
-<tr><td>tslot20x20</td> <td>Extrusions and small profiles</td> <td>False</td> <td>True</td></tr>
-<tr><td>tslot20x20_1s</td> <td>Extrusions and small profiles</td> <td>False</td> <td>True</td></tr>
-<tr><td>tslot20x20_2s</td> <td>Extrusions and small profiles</td> <td>False</td> <td>True</td></tr>
-<tr><td>tslot20x20_2sa</td> <td>Extrusions and small profiles</td> <td>False</td> <td>True</td></tr>
-<tr><td>tslot20x20_3s</td> <td>Extrusions and small profiles</td> <td>False</td> <td>True</td></tr>
 <tr><td>vslot20x20</td> <td>Extrusions and small profiles</td> <td>True</td> <td>False</td></tr>
 <tr><td>vslot20x40</td> <td>Extrusions and small profiles</td> <td>True</td> <td>False</td></tr>
 <tr><td>vslot20x60</td> <td>Extrusions and small profiles</td> <td>True</td> <td>False</td></tr>
@@ -173,12 +171,14 @@
 <tr><td>hexsocketsetscrewcup</td> <td>Hexagon socket fasteners</td> <td>False</td> <td>False</td></tr>
 <tr><td>hexsocketsetscrewall</td> <td>Hexagon socket fasteners</td> <td>False</td> <td>False</td></tr>
 <tr><td>lbeam_lnp_equal</td> <td>Profiles L</td> <td>True</td> <td>False</td></tr>
+<tr><td>lbeam_lnp_unequal</td> <td>Profiles L</td> <td>True</td> <td>False</td></tr>
 <tr><td>doublerowradialbearing</td> <td>Bearings</td> <td>True</td> <td>False</td></tr>
 <tr><td>needleroller</td> <td>Bearings</td> <td>True</td> <td>False</td></tr>
 <tr><td>cylindricalrollerbearing</td> <td>Bearings</td> <td>True</td> <td>False</td></tr>
 <tr><td>zbeam</td> <td>Profiles Z</td> <td>True</td> <td>False</td></tr>
 <tr><td>cbeam_upe</td> <td>Profiles C</td> <td>True</td> <td>False</td></tr>
 <tr><td>cbeam_uap</td> <td>Profiles C</td> <td>True</td> <td>False</td></tr>
+<tr><td>cbeam_upn</td> <td>Profiles C</td> <td>True</td> <td>False</td></tr>
 <tr><td>ibeam_hea</td> <td>Profiles I</td> <td>True</td> <td>False</td></tr>
 <tr><td>ibeam_heaa</td> <td>Profiles I</td> <td>True</td> <td>False</td></tr>
 <tr><td>ibeam_heb</td> <td>Profiles I</td> <td>True</td> <td>False</td></tr>
@@ -189,7 +189,7 @@
 <tr><td>ibeam_ipeo</td> <td>Profiles I</td> <td>True</td> <td>False</td></tr>
 <tr><td>ibeam_iper</td> <td>Profiles I</td> <td>True</td> <td>False</td></tr>
 <tr><td>ibeam_ipev</td> <td>Profiles I</td> <td>True</td> <td>False</td></tr>
-<tr><td>inp</td> <td>Profiles I</td> <td>True</td> <td>False</td></tr>
+<tr><td>ibeam_inp</td> <td>Profiles I</td> <td>True</td> <td>False</td></tr>
 </table>
 
   </div>
@@ -206,6 +206,7 @@
 
     <table class="table">
 <tr><th>Class id</th> <th>Drawing type</th> <th>Locations</th> <th>Collection</th><tr>
+<tr><td>vacuumflange</td> <td>Dimensions</td> <td>-</td> <td>Vacuum</td></tr>
 <tr><td>tubebarcrimpedends</td> <td>Dimensions</td> <td>-</td> <td>Connecting Bars</td></tr>
 <tr><td>hexsocketsetscrewflat</td> <td>Dimensions</td> <td>-</td> <td>Hexagon socket fasteners</td></tr>
 <tr><td>hexsocketsetscrewcone</td> <td>Dimensions</td> <td>-</td> <td>Hexagon socket fasteners</td></tr>
@@ -213,7 +214,9 @@
 <tr><td>hexsocketsetscrewcup</td> <td>Dimensions</td> <td>-</td> <td>Hexagon socket fasteners</td></tr>
 <tr><td>hexsocketsetscrewall</td> <td>Dimensions</td> <td>-</td> <td>Hexagon socket fasteners</td></tr>
 <tr><td>lbeam_lnp_equal</td> <td>Dimensions</td> <td>-</td> <td>Profiles L</td></tr>
+<tr><td>lbeam_lnp_unequal</td> <td>Dimensions</td> <td>-</td> <td>Profiles L</td></tr>
 <tr><td>zbeam</td> <td>Dimensions</td> <td>-</td> <td>Profiles Z</td></tr>
+<tr><td>cbeam_upn</td> <td>Dimensions</td> <td>-</td> <td>Profiles C</td></tr>
 <tr><td>ibeam_hea</td> <td>Dimensions</td> <td>-</td> <td>Profiles I</td></tr>
 <tr><td>ibeam_heaa</td> <td>Dimensions</td> <td>-</td> <td>Profiles I</td></tr>
 <tr><td>ibeam_heb</td> <td>Dimensions</td> <td>-</td> <td>Profiles I</td></tr>
@@ -224,7 +227,8 @@
 <tr><td>ibeam_ipeo</td> <td>Dimensions</td> <td>-</td> <td>Profiles I</td></tr>
 <tr><td>ibeam_iper</td> <td>Dimensions</td> <td>-</td> <td>Profiles I</td></tr>
 <tr><td>ibeam_ipev</td> <td>Dimensions</td> <td>-</td> <td>Profiles I</td></tr>
-<tr><td>inp</td> <td>Dimensions</td> <td>-</td> <td>Profiles I</td></tr>
+<tr><td>ibeam_inp</td> <td>Dimensions</td> <td>-</td> <td>Profiles I</td></tr>
+<tr><td>vacuumflange</td> <td>Connectors</td> <td>back-in,back-out,front-out,front-in</td> <td>Vacuum</td></tr>
 </table>
 
   </div>
