@@ -60,17 +60,15 @@
   <div class="col-sm-8 blog-main">
     <div class="blog-post">
       <h2 class="blog-post-title"><a href="/sv/blog/2014/1/8/Parameter-descriptions.html">Parameter description</a></h2>
-      <p class="blog-post-meta">Posted on 8 jan. 2014 16.15.00 by Johannes</p>
+      <p class="blog-post-meta">Posted on 8 jan. 2014 16:15:00 by Johannes</p>
       <p>blt files now contain a human readable description of the various  parameters
 of a part.</p>
-
 <!-- more -->
 
 <p>I just merged some code that extends the blt file format to allow for short
 descriptions of the parameters. The way this is specified is best shown with a
 real world example (taken from
 <a href="https://github.com/jreinhardt/BOLTS/blob/master/data/nut.blt">here</a>:</p>
-
 <pre><code>- id: hexagonthinnut1
   naming:
     template: Hexagon thin nut %s - %s
@@ -100,23 +98,17 @@ real world example (taken from
               M2.5:   [  2.5,  5,    1.6,    5.45,   ]
 ...
 </code></pre>
-
 <p>The description field of the parameters element is a YAML associative array
 that maps each parameter name to its description. If a part contains only few
 parameters, the compact notation for associative arrays can be used (like in
 the the types and defaults fields).</p>
-
 <p>BOLTS has a check to encourage complete coverage of all parameters and
 complains if unknown parameters are described.</p>
-
 <p>This information is used in the <a href="/en/parts/standards/ISO4035.html">html documentation</a>
 for each part, just below the drawing, to give it more context.</p>
-
 <p>It is also shown as a tooltip in the FreeCAD widget, when hovering above the
 widget for the free parameters:</p>
-
 <p><a href="/sv/blog/static/freecad_tooltip.png"><img alt="Descriptive Tooltips" src="/sv/blog/static/freecad_tooltip.png" /></a></p>
-
 <p>This feature (along with a few more improvements and fixes) is available in the
 latest development snapshot from the <a href="/en/downloads.html?version=0.3">download section</a>.</p>
       <h2>Comments</h2>

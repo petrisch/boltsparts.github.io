@@ -2,10 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title type="text">Recent Blog Entries</title>
   <id>https://boltsparts.github.io/en/blog/atom.xml</id>
-  <updated>2021-09-06T22:15:00Z</updated>
+  <updated>2022-11-01T13:47:00Z</updated>
   <link href="https://boltsparts.github.io/" />
   <link href="https://boltsparts.github.io/en/blog/atom.xml" rel="self" />
   <generator>Werkzeug</generator>
+  <entry xml:base="https://boltsparts.github.io/en/blog/atom.xml">
+    <title type="text">Development Continuation</title>
+    <id>https://boltsparts.github.io/en/blog/2022/11/1/Development-Continuation.html</id>
+    <updated>2022-11-01T13:47:00Z</updated>
+    <published>2022-11-01T13:47:00Z</published>
+    <link href="https://boltsparts.github.io/en/blog/2022/11/1/Development-Continuation.html" />
+    <author>
+      <name>Bernd</name>
+    </author>
+    <summary type="html"><p>Good News!</p></summary>
+    <content type="html">&lt;p&gt;Good News!&lt;/p&gt;
+&lt;!-- more --&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A developer meeting has taken place. See &lt;a href=&quot;https://github.com/boltsparts/BOLTS/issues/257&quot;&gt;issue 257&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Actually it is the second developer meeting. The first one was great too, but did not result in much development.&lt;/li&gt;
+&lt;li&gt;Recreation of website works :-)&lt;/li&gt;
+&lt;li&gt;stay tuned.&lt;/li&gt;
+&lt;/ul&gt;</content>
+  </entry>
   <entry xml:base="https://boltsparts.github.io/en/blog/atom.xml">
     <title type="text">New BOLTS distribution PythonPackage</title>
     <id>https://boltsparts.github.io/en/blog/2021/9/6/PythonPackage%20distribution.html</id>
@@ -109,8 +129,9 @@ OpenSCAD and FreeCAD. There is not much new functionality, but a few bugfixes
 that were contributed.</p></summary>
     <content type="html">&lt;p&gt;I put new development snapshots &lt;a href=&quot;{{ url(main.downloads) }}&quot;&gt;online&lt;/a&gt; for both
 OpenSCAD and FreeCAD. There is not much new functionality, but a few bugfixes
-that were contributed.
-&lt;!-- more --&gt;&lt;/p&gt;
+that were contributed.&lt;/p&gt;
+&lt;!-- more --&gt;
+
 &lt;p&gt;Main improvements:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;some fixes for using BOLTS for FreeCAD on Arch Linux (contributed by Jon Nordby)&lt;/li&gt;
@@ -131,8 +152,9 @@ OpenSCAD backends, but only show up on the website.&lt;/p&gt;</content>
       <name>Johannes</name>
     </author>
     <summary type="html"><p>This is a news updates that discusses the lack of updates, an important update and many small updates.</p></summary>
-    <content type="html">&lt;p&gt;This is a news updates that discusses the lack of updates, an important update and many small updates.
-&lt;!-- more --&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;This is a news updates that discusses the lack of updates, an important update and many small updates.&lt;/p&gt;
+&lt;!-- more --&gt;
+
 &lt;p&gt;There have been no updates on BOLTS itself, as I have not much time at the
 moment. I hope to be able to get back soon, and finish a large change in the
 way BOLTS handles data, which should pave the way for a few new features. And I
@@ -681,61 +703,5 @@ widget for the free parameters:&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;{{ static(freecad_tooltip.png) }}&quot;&gt;&lt;img alt=&quot;Descriptive Tooltips&quot; src=&quot;{{ static(freecad_tooltip.png) }}&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;This feature (along with a few more improvements and fixes) is available in the
 latest development snapshot from the &lt;a href=&quot;{{ url(main.downloads) }}&quot;&gt;download section&lt;/a&gt;.&lt;/p&gt;</content>
-  </entry>
-  <entry xml:base="https://boltsparts.github.io/en/blog/atom.xml">
-    <title type="text">IGES Backend</title>
-    <id>https://boltsparts.github.io/en/blog/2014/1/7/IGES-backend.html</id>
-    <updated>2014-01-07T12:30:00Z</updated>
-    <published>2014-01-07T12:30:00Z</published>
-    <link href="https://boltsparts.github.io/en/blog/2014/1/7/IGES-backend.html" />
-    <author>
-      <name>Johannes</name>
-    </author>
-    <summary type="html"><p>I recently merged a bit of code that allows to export all the parts available
-in BOLTS for FreeCAD to <a href="http://en.wikipedia.org/wiki/IGES">IGES</a>. IGES is a
-standardized file format for CAD data that is widely supported. Now BOLTS can
-be used by users of CAD applications besides FreeCAD and OpenSCAD.</p></summary>
-    <content type="html">&lt;p&gt;I recently merged a bit of code that allows to export all the parts available
-in BOLTS for FreeCAD to &lt;a href=&quot;http://en.wikipedia.org/wiki/IGES&quot;&gt;IGES&lt;/a&gt;. IGES is a
-standardized file format for CAD data that is widely supported. Now BOLTS can
-be used by users of CAD applications besides FreeCAD and OpenSCAD.&lt;/p&gt;
-&lt;!-- more --&gt;
-
-&lt;p&gt;In contrast to BOLTS for FreeCAD and OpenSCAD, where a certain size or
-variation of a part is created from a parametric model, the IGES distribution
-contains one file for each size and variation of a part. This results in a lot
-of files (about 1000), and forces us to choose which sizes should be included
-at export time.&lt;/p&gt;
-&lt;p&gt;This choice is codified in the blt files in form of common parameter
-combinations, I have &lt;a href=&quot;{{ blog(2013/11/29/BLT-file-progress) }}&quot;&gt;blogged about this&lt;/a&gt;
-a while ago. I have not yet specified common parameters for all classes of
-parts, and BOLTS can not guess them in some cases. These parts are then ignored
-and not exported to IGES. A list of parts that miss common parameter
-information can be found on the &lt;a href=&quot;{{ url(main.tasks) }}&quot;&gt;tasks page&lt;/a&gt;. One
-only has to lookup a few vendor sites on the internet and find the most common
-sizes and variations of parameters for the part and enter them into the blt
-file.&lt;/p&gt;
-&lt;h3&gt;What about STEP?&lt;/h3&gt;
-&lt;p&gt;STEP is a more recent and more powerful exchange format for CAD data. It is
-also widely supported by CAD applications. However, FreeCAD has a few issues
-with STEP, which cause problems when exporting the BOLTS parts. There is a bit
-of discussion around these issues and how to resolve them in the
-&lt;a href=&quot;https://github.com/jreinhardt/BOLTS/issues/4&quot;&gt;BOLTS github issue&lt;/a&gt;
- and in the &lt;a href=&quot;http://forum.freecadweb.org/viewtopic.php?f=10&amp;amp;t=5086&quot;&gt;FreeCAD forum&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;I decided to postpone export to STEP, and go with IGES instead, as this works
-without problems.&lt;/p&gt;
-&lt;h3&gt;File size and compression&lt;/h3&gt;
-&lt;p&gt;As mentioned earlier, the IGES distribution consists of a lot of files, many of
-which are very similar. It currently has around 1600 files with a total size of
-around 120 MByte. These files are compressed into a single file which can then
-be downloaded from the &lt;a href=&quot;{{ url(main.downloads) }}&quot;&gt;download section&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;In contrast to the FreeCAD and OpenSCAD distributions of BOLTS, which are
-available both as zip and tar.gz, the IGES distribution is only available as
-tar.xz, because this format achieves significantly better compression for this
-kind of content. The 120 MByte of IGES files result in a 12 MByte zip file, but
-only in a 2 MByte tar.xz file.&lt;/p&gt;
-&lt;p&gt;On Windows, tar.xz files can be decompressed using the &lt;a href=&quot;http://www.7-zip.org/&quot;&gt;7z tool&lt;/a&gt;. 
-On most Linux distributions the common tools to work with compressed data can
-handle tar.xz, or at least packages are available for xz-tools.&lt;/p&gt;</content>
   </entry>
 </feed>

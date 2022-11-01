@@ -148,7 +148,7 @@ that connect them.</p>
 fix its geometry completely, three dimensions are necessary: the inner
 diameter, the outer diameter and the length.</p>
 <p>However, some combinations of the three are more common than others, because there are
-<a href="http://en.wikipedia.org/wiki/Pipe_%28fluid_conveyance%29#Sizes">standards</a>
+<a href="http://en.wikipedia.org/wiki/Pipe_%%28fluid_conveyance%%29#Sizes">standards</a>
 specify combinations of (some of) the parameters.</p>
 <p>So another way to specify a pipe would be to specify a nominal pipe size and a
 length. There are tables that one can use to look up the inner and outer
@@ -173,7 +173,7 @@ at other collections.</p>
 <pre><code>classes:
   - id: genericpipe
     naming:
-      template: Pipe OD %g mm ID %g mm length %g mm
+      template: Pipe OD %%g mm ID %%g mm length %%g mm
       substitute: [od, id, l]
     description: a generic pipe
     parameters:
@@ -185,7 +185,7 @@ at other collections.</p>
 this id is also exposed to the user, so choosing a descriptive name is a good
 idea.</p>
 <p>The naming field describes how to generate a name for the part. It consists of
-a template with placeholders (the parts with the %), and the list of parameter
+a template with placeholders (the parts with the %%), and the list of parameter
 values that should be inserted there. The placeholders follow the rules of
 <a href="http://docs.python.org/2/library/stdtypes.html#string-formatting">python string formatting</a></p>
 <p>So a 1000mm long pipe with 12mm outer diameter and 10mm inner diameter would
@@ -208,13 +208,13 @@ available and rather expensive, but often vendors provide drawings or tables or
 other technical information. Technical information is a good term to search
 for. Usually you get a big table of dimensions.</p>
 <p>In the case of pipes, it was very easy to find this information,
-<a href="http://de.wikipedia.org/wiki/Rohr_%28Technik%29#Abmessungen">Wikipedia got it (in German)</a>.
+<a href="http://de.wikipedia.org/wiki/Rohr_%%28Technik%%29#Abmessungen">Wikipedia got it (in German)</a>.
 A bit of search also reveals a
 <a href="http://www.gillain.com/en/tubes-and-components/p/detail/food-tubes-din-11850">vendor site with more tables</a>.</p>
 <p>The class for DIN11850 looks like this</p>
 <pre><code>  - id: din11850range2
     naming:
-      template: DIN11850 Range 2 DN %d length %g
+      template: DIN11850 Range 2 DN %%d length %%g
       substitute: [dn, l]
     description: pipe
     standard: DIN11850 Range 2

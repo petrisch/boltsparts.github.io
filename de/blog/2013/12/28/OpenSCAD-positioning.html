@@ -68,7 +68,6 @@ and then has to translate and rotate it around. This often requires the
 knowledge of some dimensions of the part, so one has to query BOLTS about it,
 and suddenly it is a lot of code that is difficult to read and annoying to
 write.</p>
-
 <!-- more -->
 
 <p>OpenSCAD code in general quickly becomes big and difficult, because it usually
@@ -78,14 +77,11 @@ allows for a certain degree of reuse, but I still often find myself in the
 situation that I get stuck with understanding a piece of massively nested
 OpenSCAD code that I wrote only a while ago. Things like 
 translate([h-2*l,40-k,a+b+f-c]) rotate([0,90,0]) translate(...).</p>
-
 <h3>Scope</h3>
-
 <p>I believe that scope is a fundamental ingredient to clarity and brevity
 in programming. Allowing the programmer to think only about the current
 problem he is attacking, while moving everything else out of sight,
 results in clean and readable code.</p>
-
 <p>I had bookmarked obijuans
 <a href="https://github.com/Obijuan/obiscad">attach library</a>(or on
 <a href="http://www.thingiverse.com/thing:30136">Thingiverse</a>) already quite a while
@@ -93,17 +89,14 @@ ago, because I had hoped, that the connector concept could allow for cleaner,
 less entangled code. When playing around with it, I realized that a connector
 is basically a local coordinate system with a origin, one axis to fix the
 direction and another axis to fix the rotation around the first axis.</p>
-
 <p>I like the idea of local coordinate systems, because it is a local
 scope that can be convenient to think in. It also seems a promising
 approach to avoid or at least reduce the cumbersome and
 difficult nested transformations or complicated arguments that I often
 end up with.</p>
-
 <p>I hacked together <a href="https://github.com/jreinhardt/local-scad">a bit of code</a>
 to do that, heavily inspired by the attach library, but working around some
 issues. At the moment it allows to do three things:</p>
-
 <ul>
 <li>Create and display coordinate systems (lists of lists with origin and
   x,y,z axes, but the user should not need to know this)</li>
@@ -112,22 +105,16 @@ issues. At the moment it allows to do three things:</p>
 <li>align a coordinate system and a object (or a tree) with
   another coordinate system.</li>
 </ul>
-
 <p>The first and the last operation are slightly improved variations of
 the functionality of the attach library.</p>
-
 <h3>Positioning in BOLTS for OpenSCAD</h3>
-
 <p>To make use of this method of positioning in BOLTS, each part provides
 a few connectors located at strategic positions of the part. Then the align
 operation can be used to position and orient the part. This way things like
 "put that bolt the so that its tip is here" or "the head of that bolt should
 be at this point" can be expressed in a compact and readable way.</p>
-
 <p><a href="/de/blog/static/openscad-connectors.png"><img alt="Connector positions" src="/de/blog/static/openscad-connectors.png" /></a></p>
-
 <h3>Example: Bolted connection</h3>
-
 <pre><code>include &lt;BOLTS.scad&gt;
 
 $fn=50;
@@ -152,25 +139,19 @@ align(bolt_cs,cube_cs,[-s,0,0]) ISO4017("M4",20);
 align(washer_cs,cube_cs,[10+s,0,0]) ISO7089("M4");
 align(nut_cs,cube_cs,[10+s,0,0]) ISO4035("M4");
 </code></pre>
-
 <p>which is readable, compact and flexible. To change the position or
 orientation of the bolted connection, one just has to change cube_cs.
 Changing the size of the bolts and washers change M4 is also easy.</p>
-
 <p><a href="/de/blog/static/openscad-positioningexample.png"><img alt="Bolted connection example" src="/de/blog/static/openscad-positioningexample.png" /></a></p>
-
 <h3>Try it</h3>
-
 <p>You can try this functionality with the most recent development snapshot from
 the <a href="/en/downloads.html?version=0.3">BOLTS page</a>. Either place the contents of the
 archive in the same directory as the .scad files that use BOLTS, or follow the
 instructions on 
 <a href="/en/docs/0.4/document/openscad/installation.html">how to install BOLTS for OpenSCAD</a>.</p>
-
 <p>Not all parts have connectors yet, but nuts, washers, hex bolts and
 batteries do. The names of the connectors are listed in the OpenSCAD section of the
 <a href="/en/parts/index.html?version=0.3">part page</a>.</p>
-
 <p>There is no documentation for this feature (apart from this blog post), because
 I might still change the way things work.</p>
       <h2>Kommentare</h2>

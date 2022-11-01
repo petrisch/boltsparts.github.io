@@ -65,32 +65,24 @@
 instances of <a href="https://github.com/jreinhardt/BOLTS/issues/60">python 2.7 specific</a>
 syntax and standard libraries, so that the current development snapshot of
 BOLTS for FreeCAD is usable with python 2.6.</p>
-
 <!-- more -->
 
 <p>Problems were caused by dict comprehensions</p>
-
 <pre><code>a = { k:[] for k in range(10) }
 </code></pre>
-
 <p>that were only introduced in python 2.7. A 2.6 compatible reformulation of this is</p>
-
 <pre><code>a = dict((k,[]) for k in range(10))
 </code></pre>
-
 <p>Additionally the importlib was introduced to the standard library only in
 python 2.7, but there exists a
 <a href="https://pypi.python.org/pypi/importlib/1.0.2">backport</a> for older versions.</p>
-
 <p>The last problem was related to <code>check_output</code> from the <code>subprocess</code> module, which is not present in the python 2.6 standard library.</p>
-
 <p>This allows users with python 2.6 (which is still used a lot e.g. in Ubuntu LTS
 releases) to <a href="/en/docs/0.3/document/freecad/usage.html">use BOLTS</a> for FreeCAD. However for
 development, the scripts that generate the distributions and the <a href="/en/docs/0.3/document/general/utility-script.html">utility
 script</a> use 2.7 features and
 it would be a lot of work to make these 2.6 compatible, so I do not plan to do
 that.</p>
-
 <p>Instead it might be a good idea to look into python 3 compatibility in the long
 term.</p>
       <h2>Comments</h2>
