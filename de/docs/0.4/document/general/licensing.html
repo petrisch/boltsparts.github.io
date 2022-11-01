@@ -86,7 +86,7 @@ Generated-By: Babel 1.3</p>
 <p><a href="https://github.com/jreinhardt/bolttools">bolttools</a> is a collection of python modules that handle various tasks and aspects of the processes in BOLTS: create HTML documentation, parse the blt and base files, perform consistency checks on the parts and assemble the different distributions (BOLTS for FreeCAD, BOLTS for OpenSCAD). bolttools is developed by me and licensed under the <a href="http://www.gnu.org/licenses/old-licenses/lgpl-2.1">LGPL 2.1 or later</a>.</p>
 </li>
 <li>
-<p>the blt files are YAML files that contain not backend specific data and metadata about the part (more precisely about classes of parts, because there is often a large amount of redundancy). These files contain among other informations the tables with dimensions, and form the foundation of BOLTS. Its license is chosen by the creator.</p>
+<p>the blt files are YAML files that contain not backend specific data and metadata about the part (more precisely about classes of parts, because there is often a large amount of redundancy). These files contain among other information the tables with dimensions, and form the foundation of BOLTS. Its license is chosen by the creator.</p>
 </li>
 <li>
 <p>the backend specific data is specific to the CAD application (FreeCAD or OpenSCAD at the moment), and generally comes in form of code (OpenSCAD modules or FreeCAD python functions). Its license is chosen by the creator.</p>
@@ -96,7 +96,7 @@ Generated-By: Babel 1.3</p>
 <p>When we put together a distribution consisiting of all these files with different licenses, what license has the result? This is a difficult question, and in fact there are many licenses with conflicting terms, so that they can not be combined at all.</p>
 <p>We want to focus on open source licenses, and luckily someone who knows <a href="http://www.dwheeler.com/essays/floss-license-slide.html">explained the situation there very well</a>. In particular I like the graph on this page.</p>
 <p>And when we take some content with a certain license A and process it with a program with a certain license B, what license C has the result?</p>
-<p>This is much easier to answer, and again I reference <a href="http://www.gnu.org/licenses/gpl-faq.html#GPLOutput">people who know</a>. The result has license A, unless very specifc conditions apply.</p>
+<p>This is much easier to answer, and again I reference <a href="http://www.gnu.org/licenses/gpl-faq.html#GPLOutput">people who know</a>. The result has license A, unless very specific conditions apply.</p>
 <h3>Consequences for BOLTS distributions</h3>
 <p>In BOLTS we have both of these mechanisms, in combination that depends on the target CAD system:</p>
 <h4>FreeCAD</h4>
@@ -113,7 +113,7 @@ Generated-By: Babel 1.3</p>
 <p>But the same considerations have to be applied to the case, when someone uses BOLTS for OpenSCAD or FreeCAD to to create a nice design. This design is a combined work consisting of the content that the user created, and the parts provided by BOLTS. So does this pose restrictions on the license of the design?</p>
 <p>This would be rather drastic, as that would severely limit the choice of licenses the user could assign to its design. This would limit the audience and the usefulness of BOLTS massively, so this is something that should be avoided.</p>
 <h4>Backend specific data in form of code</h4>
-<p>In this case on can consider the part as the result of a program (BOLTS), which is not affected by the license of the programm. So parts created by code (FreeCAD python functions and OpenSCAD modules) cause no licensing related restrictions on the resulting design.</p>
+<p>In this case on can consider the part as the result of a program (BOLTS), which is not affected by the license of the program. So parts created by code (FreeCAD python functions and OpenSCAD modules) cause no licensing related restrictions on the resulting design.</p>
 <h3>Consequences for BOLTS itself</h3>
 <p>I want to be able to consider the whole of BOLTS, i.e. all the content that is contained in the <a href="https://github.com/jreinhardt/BOLTS">BOLTS git repo</a> as a single combined work. I am not sure whether that is really necessary, but I could imagine that it might be necessary for things like a bolts-dev Debian package. At the moment BOLTS is licensed under GPL 3.0+, as this is the most restrictive license of all components.</p>
 <p>However this makes it necessary to exclude GPL 2.0 (without the or any later version clause) material, as this can not be combined with GPL 3.0+ material.</p>

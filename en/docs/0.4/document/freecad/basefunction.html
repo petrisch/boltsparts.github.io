@@ -70,7 +70,7 @@ is already created, and you have a python function that creates the part that
 you want to add to BOLTS. For more information on part scripting in FreeCAD see
 the <a href="http://freecadweb.org/wiki/index.php?title=Power_users_hub">FreeCAD documentation on this topic</a>.</p>
 <h3>The function</h3>
-<p>As an example we  use the follwing function to create washers:</p>
+<p>As an example we  use the following function to create washers:</p>
 <pre><code>import Part
 
 def washer1(params,document):
@@ -104,7 +104,7 @@ the collection to which the part belongs (in this case <code>washer</code>). Thi
 directory must contain a empty file called <code>__init__.py</code> and the base file for
 this collection (in this case <code>washer.base</code>).</p>
 <h3>Write the base file</h3>
-<p>The base file provides BOLTS with all the informations it needs to know about
+<p>The base file provides BOLTS with all the information it needs to know about
 the files in a collection directory, it is a kind of manifest file. It contains
 a list of sections (more precisely 
 <a href="/en/docs/0.4/specification.html#base-file-element">base file elements</a>)
@@ -125,14 +125,14 @@ those two markers follows a list of base file elements, one for each file.
 The begin of a new element is indicated by a hyphen. If there are more than
 one file in the collection directory, there would be more elements, but here
 it is only one.</p>
-<p>The base file element gives informations about the file like the filename,
+<p>The base file element gives information about the file like the filename,
 the author and the license under which it is published.</p>
 <p>The line <code>type: function</code> indicates that it contains python functions for
 FreeCAD. As a file can contain more than one function, a list of elements
 follows, that describe the individual functions. In our case there is only
 one, called washer1.</p>
 <p>There is the possibility to add an optional <code>source</code> field which allows to give
-informations about the origin of the file. If there is a URL from which this
+information about the origin of the file. If there is a URL from which this
 file was downloaded, this can be included here.</p>
 <p>The <code>classids</code> field contains a list of classids to which this function
 applies.  BOLTS contains four different classes that describe washers, so in
@@ -140,7 +140,7 @@ this case this list is rather long, but in other cases it might only contain
 a single entry. Be careful, that the parameter names for all classes in this
 list must be the same, otherwise the parameter dict contains unexpected
 entries or names can not be found.</p>
-<p>When working on base files, pay attention to whitespace and identation and do
+<p>When working on base files, pay attention to whitespace and indentation and do
 not use tabs.</p>
 <h3>Testing</h3>
 <p>You should now test the newly added part. This is most easily done on the
@@ -156,7 +156,7 @@ search path set appropriately, so that typing</p>
 <p>If BOLTS is started successfully, try adding the newly added part to the
 current document with different combinations of parameters.</p>
 <p>If nothing happens when you try to add the file, there is probably an error
-occuring during the execution of the function. Such errors are suppressed by
+occurring during the execution of the function. Such errors are suppressed by
 the gui system, so that no error messages are displayed. You can circumvent
 this by activating the <code>Add part</code> button manually. To do this type</p>
 <pre><code>BOLTS.widget.ui.addButton.clicked.emit(True)

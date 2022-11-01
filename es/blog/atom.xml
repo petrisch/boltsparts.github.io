@@ -43,10 +43,10 @@
 &lt;ul&gt;
 &lt;li&gt;A very nasty problem in the regard of imports on all operating systems
   has been fixed for FreeCAD backend.&lt;/li&gt;
-&lt;li&gt;A lot of code formating has taken place.&lt;/li&gt;
-&lt;li&gt;On a few places it was moved to some more generic aproach.
+&lt;li&gt;A lot of code formatting has taken place.&lt;/li&gt;
+&lt;li&gt;On a few places it was moved to some more generic approach.
   Thus duplicate code was deleted.&lt;/li&gt;
-&lt;li&gt;A new distribution PythonPackage for the use without any CAD has been develped.&lt;/li&gt;
+&lt;li&gt;A new distribution PythonPackage for the use without any CAD has been developed.&lt;/li&gt;
 &lt;li&gt;On osarch is a topic with lots of interesting posts.
   See &lt;a href=&quot;https://community.osarch.org/discussion/524/profile-section-libraries-for-structural-engineering-and-beyond/&quot;&gt;Profile Section Libraries for Structural Engineering and beyond!&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content>
@@ -276,7 +276,7 @@ what this post is about.&lt;/p&gt;
 &lt;p&gt;BOLTS now has a proper and more memorable domain at
 &lt;a href=&quot;http://bolts-library.org&quot;&gt;bolts-library.org&lt;/a&gt;, instead of a relatively
 complicated github.io url. I had to take a domain with a additional suffix, as
-bolts alone was already taken in every useful top level domain. Thats the
+bolts alone was already taken in every useful top level domain. That's the
 disadvantage if you choose an acronyme for a project that is also a real word.&lt;/p&gt;
 &lt;h2&gt;Responsive Design&lt;/h2&gt;
 &lt;p&gt;The &lt;a href=&quot;https://github.com/Wolfr/cactus-jekyll-theme&quot;&gt;original Jekyll Theme&lt;/a&gt; that
@@ -336,11 +336,11 @@ content will still be found in english.&lt;/p&gt;
 &lt;p&gt;The results are clustered in two categories, parts and documentation, so that
 you can easily select the result that you are interested in.&lt;/p&gt;
 &lt;h2&gt;Versioned Documentation&lt;/h2&gt;
-&lt;p&gt;Now the documentaion for multiple versions of BOLTS can be accessed separately.
+&lt;p&gt;Now the documentation for multiple versions of BOLTS can be accessed separately.
 With the old setup, a common problem was, that the documentation was updated
 for the current development version of BOLTS, and therefore differed
 significantly from what people actually had installed, which was confusing. Now
-the documentation for the stable relaease and the development version can be
+the documentation for the stable release and the development version can be
 accessed separately&lt;/p&gt;
 &lt;p&gt;At the moment however, the documentation for the development version is not
 fully up to date.&lt;/p&gt;
@@ -356,7 +356,7 @@ RedHat, which integrates very well with the git based workflow that emerged for
 the development of BOLTS.&lt;/p&gt;
 &lt;p&gt;This stack will also allow for further experiments, improvements and
 extensions. For example it will be very easy to expose a REST API to all the
-data BOLTS nows about, to allow other application to easily obtain informations
+data BOLTS nows about, to allow other application to easily obtain information
 about standard parts.&lt;/p&gt;
 &lt;h2&gt;Better Workflow&lt;/h2&gt;
 &lt;p&gt;For me the new site results in a much more comfortable workflow. The old site
@@ -371,7 +371,7 @@ the history of the repo, to cut down the size.&lt;/p&gt;
 &lt;p&gt;There are a few small disadvantages though. Due to the migration all the Google
 credit that the old page had accumulated is lost, so at the moment it is a bit
 more difficult to find the new website by googling.&lt;/p&gt;
-&lt;p&gt;And everytime I push an update to the homepage, there is roughly half a minute
+&lt;p&gt;And every time I push an update to the homepage, there is roughly half a minute
 downtime. It is possible to avoid this, but this requires a few changes to the
 app, and I have not yet tackled that.&lt;/p&gt;</content>
   </entry>
@@ -551,7 +551,7 @@ ordinary part.&lt;/p&gt;
 &lt;p&gt;During this effort we uncovered a fair amount of problems with BOLTS, like
 issues with names and standards and the BOLTS GUI in FreeCAD, that will have to
 be addressed. But that was somehow expected at this still quite early stage of
-develoment.&lt;/p&gt;
+development.&lt;/p&gt;
 &lt;p&gt;If you want to testdrive this, you can grab the latest development snapshot
 from the &lt;a href=&quot;http://jreinhardt.github.io/BOLTS/index.html&quot;&gt;webpage&lt;/a&gt;. This will
 turn into a stable release unless problems are uncovered, so every bit of
